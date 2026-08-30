@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-08-27T09:10:34.267723+00:00",
+  "files": {
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\sales_data.csv": {
+      "shape": [
+        53,
+        11
+      ],
+      "columns": {
+        "transaction_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "T0001",
+            "T0002",
+            "T0003"
+          ]
+        },
+        "transaction_date": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "2024-01-15",
+            "01/16/2024",
+            "01-17-2024"
+          ]
+        },
+        "store_id": {
+          "dtype": "str",
+          "null_count": 10,
+          "null_pct": 18.87,
+          "unique_count": 5,
+          "sample_values": [
+            "S01",
+            "S02",
+            "S03"
+          ]
+        },
+        "product_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "P001",
+            "P002",
+            "P003"
+          ]
+        },
+        "product_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "Wireless Headphones",
+            "Smart Watch",
+            "USB-C Cable"
+          ]
+        },
+        "category": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 17,
+          "sample_values": [
+            "Electronics",
+            "electronics",
+            "ELECTRONICS"
+          ]
+        },
+        "quantity": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 8,
+          "min": -2,
+          "max": 6,
+          "mean": 1.5849056603773586
+        },
+        "unit_price": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 49,
+          "min": 6.99,
+          "max": 299.0,
+          "mean": 65.59528301886792
+        },
+        "total_amount": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 49,
+          "min": -299.0,
+          "max": 249.99,
+          "mean": 65.64735849056605
+        },
+        "customer_segment": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 7,
+          "sample_values": [
+            "Loyal",
+            "Prem",
+            "Std"
+          ]
+        },
+        "payment_method": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "sample_values": [
+            "Visa",
+            "Mastercard",
+            "Cash"
+          ]
+        }
+      }
+    },
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\products.csv": {
+      "shape": [
+        20,
+        4
+      ],
+      "columns": {
+        "product_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 20,
+          "sample_values": [
+            "P001",
+            "P002",
+            "P003"
+          ]
+        },
+        "product_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 20,
+          "sample_values": [
+            "iPhone 15",
+            "Samsung Galaxy S24",
+            "AirPods Pro"
+          ]
+        },
+        "category": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "sample_values": [
+            "Electronics",
+            "Electronics",
+            "Electronics"
+          ]
+        },
+        "standard_price": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 19,
+          "min": 15.99,
+          "max": 799.99,
+          "mean": 285.614
+        }
+      }
+    },
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\stores.csv": {
+      "shape": [
+        10,
+        5
+      ],
+      "columns": {
+        "store_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 10,
+          "sample_values": [
+            "S01",
+            "S02",
+            "S03"
+          ]
+        },
+        "store_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 10,
+          "sample_values": [
+            "Downtown Flagship",
+            "Back Bay Store",
+            "Liberty Market"
+          ]
+        },
+        "region": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 4,
+          "sample_values": [
+            "Northeast",
+            "Northeast",
+            "Northeast"
+          ]
+        },
+        "city": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 10,
+          "sample_values": [
+            "New York",
+            "Boston",
+            "Philadelphia"
+          ]
+        },
+        "state": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 9,
+          "sample_values": [
+            "NY",
+            "MA",
+            "PA"
+          ]
+        }
+      }
+    }
+  },
+  "agent_analysis": {
+    "semantic_meanings": {
+      "transaction_id": "Unique identifier for each sale transaction",
+      "transaction_date": "Date of the transaction (various formats)",
+      "store_id": "Identifier linking to the physical store location",
+      "product_id": "Identifier linking to the product catalog",
+      "product_name": "Name of the product sold",
+      "category": "Product category (case\u2011inconsistent)",
+      "quantity": "Number of units sold (can be negative indicating returns)",
+      "unit_price": "Price per unit at the time of sale",
+      "total_amount": "Total transaction amount (may be negative for returns)",
+      "customer_segment": "Segment classification of the customer",
+      "payment_method": "Method used to pay",
+      "store_name": "Full name of the store",
+      "region": "Geographic region of the store",
+      "city": "City where the store is located",
+      "state": "State abbreviation of the store location",
+      "standard_price": "Standard catalog price for the product"
+    },
+    "join_keys": [
+      [
+        "store_id",
+        "store_id"
+      ],
+      [
+        "product_id",
+        "product_id"
+      ]
+    ],
+    "quality_notes": [
+      "sales_data.store_id has 18.87% nulls, which may affect store\u2011level analysis.",
+      "sales_data.quantity contains negative values (-2 to 6) indicating possible returns or data entry errors.",
+      "sales_data.total_amount contains negative values (-299.0 to 249.99) inconsistent with positive unit_price/quantity.",
+      "sales_data.transaction_date appears in multiple formats (YYYY-MM-DD, MM/DD/YYYY, MM-DD-YYYY); standardization needed.",
+      "sales_data.category values are case\u2011inconsistent (e.g., 'Electronics', 'electronics', 'ELECTRONICS'); normalise before joins.",
+      "products.category is uniformly 'Electronics'; may need to align with sales_data category values.",
+      "All string columns have no nulls except sales_data.store_id; ensure consistency of identifiers across datasets.",
+      "No missing values in products or stores, but product_name uniqueness may differ from sales_data.product_name, potentially causing mismatches."
+    ]
+  }
+}

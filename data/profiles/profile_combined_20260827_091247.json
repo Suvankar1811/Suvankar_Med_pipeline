@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-08-27T09:12:47.879501+00:00",
+  "files": {
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\sales_data.csv": {
+      "shape": [
+        53,
+        11
+      ],
+      "columns": {
+        "transaction_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "T0001",
+            "T0002",
+            "T0003"
+          ]
+        },
+        "transaction_date": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "2024-01-15",
+            "01/16/2024",
+            "01-17-2024"
+          ]
+        },
+        "store_id": {
+          "dtype": "str",
+          "null_count": 10,
+          "null_pct": 18.87,
+          "unique_count": 5,
+          "sample_values": [
+            "S01",
+            "S02",
+            "S03"
+          ]
+        },
+        "product_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "P001",
+            "P002",
+            "P003"
+          ]
+        },
+        "product_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "Wireless Headphones",
+            "Smart Watch",
+            "USB-C Cable"
+          ]
+        },
+        "category": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 17,
+          "sample_values": [
+            "Electronics",
+            "electronics",
+            "ELECTRONICS"
+          ]
+        },
+        "quantity": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 8,
+          "min": -2,
+          "max": 6,
+          "mean": 1.5849056603773586
+        },
+        "unit_price": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 49,
+          "min": 6.99,
+          "max": 299.0,
+          "mean": 65.59528301886792
+        },
+        "total_amount": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 49,
+          "min": -299.0,
+          "max": 249.99,
+          "mean": 65.64735849056605
+        },
+        "customer_segment": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 7,
+          "sample_values": [
+            "Loyal",
+            "Prem",
+            "Std"
+          ]
+        },
+        "payment_method": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "sample_values": [
+            "Visa",
+            "Mastercard",
+            "Cash"
+          ]
+        }
+      }
+    },
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\products.csv": {
+      "shape": [
+        20,
+        4
+      ],
+      "columns": {
+        "product_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 20,
+          "sample_values": [
+            "P001",
+            "P002",
+            "P003"
+          ]
+        },
+        "product_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 20,
+          "sample_values": [
+            "iPhone 15",
+            "Samsung Galaxy S24",
+            "AirPods Pro"
+          ]
+        },
+        "category": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "sample_values": [
+            "Electronics",
+            "Electronics",
+            "Electronics"
+          ]
+        },
+        "standard_price": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 19,
+          "min": 15.99,
+          "max": 799.99,
+          "mean": 285.614
+        }
+      }
+    },
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\stores.csv": {
+      "shape": [
+        10,
+        5
+      ],
+      "columns": {
+        "store_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 10,
+          "sample_values": [
+            "S01",
+            "S02",
+            "S03"
+          ]
+        },
+        "store_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 10,
+          "sample_values": [
+            "Downtown Flagship",
+            "Back Bay Store",
+            "Liberty Market"
+          ]
+        },
+        "region": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 4,
+          "sample_values": [
+            "Northeast",
+            "Northeast",
+            "Northeast"
+          ]
+        },
+        "city": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 10,
+          "sample_values": [
+            "New York",
+            "Boston",
+            "Philadelphia"
+          ]
+        },
+        "state": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 9,
+          "sample_values": [
+            "NY",
+            "MA",
+            "PA"
+          ]
+        }
+      }
+    }
+  },
+  "agent_analysis": {
+    "raw_response": "I now have complete statistics. Let me verify my analysis of the key findings before composing the profile.\n\n**VERIFY \u2014 Key findings:**\n- **sales_data.csv**: 53 rows but only 50 unique `transaction_id` \u2192 3 duplicates; `quantity` min = **-2** (negative); `total_amount` min = **-299.0** (negative); `store_id` has 10 nulls (18.87%); inconsistent date formats; inconsistent `category` casing (17 variants); inconsistent `customer_segment` (7 variants).\n- **Referential integrity**: sales `product_id` (50 unique) vs products `product_id` (20 unique); sales `product_name` values (e.g., \"Wireless Headphones\") don't match products table (e.g., \"iPhone 15\") \u2192 broken/orphan references.\n- **products.csv & stores.csv**: clean, no nulls, proper unique keys.\n\nHere is the comprehensive data profile:\n\n```json\n{\n  \"semantic_meanings\": {\n    \"sales_data.csv\": {\n      \"transaction_id\": \"Unique surrogate key identifying each sales transaction (e.g., T0001). Intended primary key.\",\n      \"transaction_date\": \"Date the transaction occurred. Business timestamp but stored as string with mixed formats.\",\n      \"store_id\": \"Foreign key referencing the store where the transaction took place (e.g., S01).\",\n      \"product_id\": \"Foreign key referencing the product sold (e.g., P001).\",\n      \"product_name\": \"Denormalized name of the product sold at the time of transaction.\",\n      \"category\": \"Product category for merchandising/reporting (e.g., Electronics).\",\n      \"quantity\": \"Number of units of the product sold in the transaction.\",\n      \"unit_price\": \"Price charged per single unit of the product in this transaction.\",\n      \"total_amount\": \"Total transaction value (quantity x unit_price).\",\n      \"customer_segment\": \"Customer loyalty/value tier (e.g., Loyal, Premium, Standard).\",\n      \"payment_method\": \"Payment instrument used (e.g., Visa, Mastercard, Cash).\"\n    },\n    \"products.csv\": {\n      \"product_id\": \"Unique product identifier / primary key (e.g., P001).\",\n      \"product_name\": \"Canonical name of the product.\",\n      \"category\": \"Canonical product category used for catalog classification.\",\n      \"standard_price\": \"List/standard retail price of the product (baseline for discount analysis).\"\n    },\n    \"stores.csv\": {\n      \"store_id\": \"Unique store identifier / primary key (e.g., S01).\",\n      \"store_name\": \"Human-readable store name.\",\n      \"region\": \"Geographic sales region (e.g., Northeast).\",\n      \"city\": \"City in which the store is located.\",\n      \"state\": \"US state abbreviation (e.g., NY).\"\n    }\n  },\n  \"join_keys\": [\n    {\n      \"columns\": [\"sales_data.store_id\", \"stores.store_id\"],\n      \"type\": \"many-to-one\",\n      \"notes\": \"Sales references stores. Sales has 5 distinct store_ids (with 10 nulls) vs 10 in stores; join will drop nulls and may leave some stores unreferenced.\"\n    },\n    {\n      \"columns\": [\"sales_data.product_id\", \"products.product_id\"],\n      \"type\": \"many-to-one\",\n      \"notes\": \"Sales references products. Referential integrity likely broken: sales shows 50 distinct product_ids but products only has 20; sales product_name values do not match the products catalog, indicating orphan/unknown product references.\"\n    }\n  ],\n  \"quality_notes\": [\n    \"sales_data.transaction_id is not unique: 53 rows but only 50 distinct values (3 duplicate transaction IDs) \u2014 violates intended primary-key semantics.\",\n    \"sales_data.quantity contains negative values (min = -2), which is not physically valid for units sold; possible returns recorded with wrong sign or data entry errors.\",\n    \"sales_data.total_amount contains negative values (min = -299.0), consistent with invalid quantities; total_amount should be reconciled against quantity x unit_price.\",\n    \"sales_data.store_id has 10 nulls (18.87%), meaning nearly one-fifth of transactions cannot be attributed to a store; will be excluded on join to stores.\",\n    \"sales_data.transaction_date is stored as string with at least three inconsistent formats (ISO '2024-01-15', 'MM/DD/YYYY', 'MM-DD-YYYY'), preventing direct date parsing/aggregation without normalization.\",\n    \"sales_data.category has 17 distinct values driven largely by inconsistent casing (e.g., 'Electronics', 'electronics', 'ELECTRONICS'); needs case normalization to a canonical set.\",\n    \"sales_data.customer_segment has 7 distinct values with inconsistent/abbreviated labels (e.g., 'Loyal', 'Prem', 'Std'); needs standardization (e.g., Premium, Standard).\",\n    \"Referential integrity issue on product: sales_data.product_id has 50 distinct values vs only 20 in products.csv, and sales product_name values (e.g., 'Wireless Headphones') do not appear in the products catalog (e.g., 'iPhone 15'), indicating orphan references or a mismatched product namespace.\",\n    \"sales_data.product_name and sales_data.category are denormalized and conflict with the canonical products.csv values (names and casing differ), creating redundancy and inconsistency risk.\",\n    \"products.csv and stores.csv are clean: no nulls, fully unique primary keys, and sensible value ranges (standard_price 15.99-799.99; stores have 10 unique store_ids across 4 regions, 9 states).\",\n    \"unit_price range in sales (6.99-299.0) is well below products.standard_price range (15.99-799.99); combined with the product-name mismatch, suggests sales and products may describe different product sets or that discounts/pricing are not consistently captured.\"\n  ]\n}\n```\n\n**Summary:** The `products.csv` and `stores.csv` files are clean reference tables with valid unique keys. The `sales_data.csv` fact table has substantial quality issues: duplicate transaction IDs, negative quantities/totals, 18.87% null store attribution, inconsistent date formats, inconsistent categorical casing/labels, and broken referential integrity against the products catalog. The two reliable join keys are `store_id` (sales\u2192stores) and `product_id` (sales\u2192products), though the product join will surface orphan records that need resolution before the silver layer."
+  }
+}

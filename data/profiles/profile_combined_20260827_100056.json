@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-08-27T10:00:56.515307+00:00",
+  "files": {
+    "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\sales_data.csv": {
+      "shape": [
+        53,
+        11
+      ],
+      "columns": {
+        "transaction_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "T0001",
+            "T0002",
+            "T0003"
+          ]
+        },
+        "transaction_date": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "2024-01-15",
+            "01/16/2024",
+            "01-17-2024"
+          ]
+        },
+        "store_id": {
+          "dtype": "str",
+          "null_count": 10,
+          "null_pct": 18.87,
+          "unique_count": 5,
+          "sample_values": [
+            "S01",
+            "S02",
+            "S03"
+          ]
+        },
+        "product_id": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "P001",
+            "P002",
+            "P003"
+          ]
+        },
+        "product_name": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 50,
+          "sample_values": [
+            "Wireless Headphones",
+            "Smart Watch",
+            "USB-C Cable"
+          ]
+        },
+        "category": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 17,
+          "sample_values": [
+            "Electronics",
+            "electronics",
+            "ELECTRONICS"
+          ]
+        },
+        "quantity": {
+          "dtype": "int64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 8,
+          "min": -2,
+          "max": 6,
+          "mean": 1.5849056603773586
+        },
+        "unit_price": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 49,
+          "min": 6.99,
+          "max": 299.0,
+          "mean": 65.59528301886792
+        },
+        "total_amount": {
+          "dtype": "float64",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 49,
+          "min": -299.0,
+          "max": 249.99,
+          "mean": 65.64735849056605
+        },
+        "customer_segment": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 7,
+          "sample_values": [
+            "Loyal",
+            "Prem",
+            "Std"
+          ]
+        },
+        "payment_method": {
+          "dtype": "str",
+          "null_count": 0,
+          "null_pct": 0.0,
+          "unique_count": 5,
+          "sample_values": [
+            "Visa",
+            "Mastercard",
+            "Cash"
+          ]
+        }
+      }
+    }
+  },
+  "agent_analysis": {
+    "raw_response": "Based on the inspection and full profiling, here is the comprehensive data profile:\n\n```json\n{\n  \"semantic_meanings\": {\n    \"transaction_id\": \"Unique identifier for each sales transaction\",\n    \"transaction_date\": \"Date when the transaction occurred (inconsistent formats detected)\",\n    \"store_id\": \"Identifier for the retail store where the transaction took place\",\n    \"product_id\": \"Unique identifier for the product sold\",\n    \"product_name\": \"Human-readable name of the product\",\n    \"category\": \"Product category classification (e.g., Electronics, Clothing)\",\n    \"quantity\": \"Number of units sold in the transaction\",\n    \"unit_price\": \"Price per single unit of the product\",\n    \"total_amount\": \"Total transaction value (quantity \u00d7 unit_price)\",\n    \"customer_segment\": \"Customer loyalty/tier classification (e.g., Loyal, Premium, Standard)\",\n    \"payment_method\": \"Method of payment used for the transaction\"\n  },\n  \"join_keys\": [\n    {\n      \"column\": \"transaction_id\",\n      \"type\": \"primary_key\",\n      \"note\": \"Intended unique transaction identifier, but 3 duplicates detected (53 rows, 50 unique values)\"\n    },\n    {\n      \"column\": \"store_id\",\n      \"type\": \"foreign_key\",\n      \"note\": \"Likely joins to a stores/dimensions table; 18.87% nulls reduce join reliability\"\n    },\n    {\n      \"column\": \"product_id\",\n      \"type\": \"foreign_key\",\n      \"note\": \"Likely joins to a products/dimensions table; 50 unique values, no nulls\"\n    }\n  ],\n  \"quality_notes\": [\n    \"DUPLICATE KEYS: transaction_id has 3 duplicate values (53 rows but only 50 unique), violating primary key integrity\",\n    \"INCONSISTENT DATE FORMATS: transaction_date appears in at least 3 formats \u2014 ISO (2024-01-15), US slash (01/16/2024), and US dash (01-17-2024) \u2014 requiring parsing/normalization before analysis\",\n    \"MISSING DATA: store_id has 10 null values (18.87%), significantly impacting store-level aggregations and joins\",\n    \"CASE INCONSISTENCY: category column has 17 unique values with mixed casing (e.g., 'Electronics', 'electronics', 'ELECTRONICS'), inflating the apparent cardinality\",\n    \"NEGATIVE QUANTITY: quantity column contains negative values (min = -2), which is physically impossible for a sales transaction and may indicate returns or data entry errors\",\n    \"NEGATIVE TOTAL AMOUNT: total_amount has a minimum of -299.0, likely a downstream effect of negative quantities\",\n    \"INCONSISTENT LABELS: customer_segment uses abbreviated/inconsistent labels (e.g., 'Prem' vs likely 'Premium', 'Std' vs 'Standard'), complicating segmentation analysis\",\n    \"RECORD COUNT MISMATCH: 53 rows with 50 unique transaction_ids suggests either 3 duplicated entries or 3 extra records that need investigation\"\n  ]\n}\n```"
+  }
+}

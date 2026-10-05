@@ -1,0 +1,16 @@
+{
+  "agent": "supervisor_phase2",
+  "run_id": "d402d23c-05cf-4fa1-aa74-208630d530ae",
+  "started_at": "2026-08-27T09:18:14.649864+00:00",
+  "input": {
+    "phase": "phase2",
+    "phase_goal": "Call bronze_agent_tool exactly once, verify its bronze_output_paths, then call sttm_agent_tool exactly once to generate Silver STTM rules."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 59.3133,
+  "status": "failed",
+  "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m05wq9b4egetgnpz17t6kess` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2121, Requested 5895. Please try again in 120ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+}

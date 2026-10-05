@@ -1,0 +1,16 @@
+{
+  "agent": "sttm_generator",
+  "run_id": "90f64791-852a-462d-af23-ee6824ca8c48",
+  "started_at": "2026-08-27T09:10:34.888273+00:00",
+  "input": {
+    "layer": "Bronze",
+    "task_description": "Generate Bronze source-to-target mappings for every profiled column, including ingestion metadata. Goal: Generate Bronze STTM rules from the completed profile."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 26.4793,
+  "status": "failed",
+  "error": "Error code: 400 - {'error': {'message': 'Tool choice is none, but model called a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{\"name\": \"inspect_context_tool\", \"arguments\": {\"context\":\"{...}\"}}'}}"
+}

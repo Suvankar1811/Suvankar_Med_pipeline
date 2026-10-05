@@ -1,0 +1,16 @@
+{
+  "agent": "supervisor_phase1",
+  "run_id": "90f64791-852a-462d-af23-ee6824ca8c48",
+  "started_at": "2026-08-27T09:10:30.777438+00:00",
+  "input": {
+    "phase": "phase1",
+    "phase_goal": "Call profiler_agent_tool exactly once, verify its profile_path, then call sttm_agent_tool exactly once to generate Bronze STTM rules."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 30.5942,
+  "status": "failed",
+  "error": "Error code: 400 - {'error': {'message': 'Tool choice is none, but model called a tool', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '{\"name\": \"inspect_context_tool\", \"arguments\": {\"context\":\"{...}\"}}'}}"
+}

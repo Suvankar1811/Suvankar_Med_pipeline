@@ -1,0 +1,21 @@
+{
+  "agent": "bronze_agent",
+  "run_id": "d402d23c-05cf-4fa1-aa74-208630d530ae",
+  "started_at": "2026-08-27T09:18:15.497161+00:00",
+  "input": {
+    "input_files": [
+      "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\sales_data.csv",
+      "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\products.csv",
+      "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\landing\\stores.csv"
+    ],
+    "sttm_path": "C:\\Users\\kalaguthirunavukk\\.copilot\\chats\\6413b42b-3ff7-409c-a93c-3c99e73f57d9\\medallion-pipeline\\data\\sttm\\sttm_bronze_20260827_091307_d402d23c.csv",
+    "task_description": "Ingest the uploaded CSV files into Bronze Parquet using the approved Bronze STTM rules. Goal: Execute Bronze ingestion for the uploaded files and return the bronze_output_paths for downstream processing."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 58.4625,
+  "status": "failed",
+  "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m05wq9b4egetgnpz17t6kess` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 2121, Requested 5895. Please try again in 120ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+}

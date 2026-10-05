@@ -1,0 +1,16 @@
+{
+  "agent": "supervisor_phase1",
+  "run_id": "a4d16ec5-eced-4d65-8010-320ce626c077",
+  "started_at": "2026-08-27T09:04:11.000039+00:00",
+  "input": {
+    "phase": "phase1",
+    "phase_goal": "Call profiler_agent_tool exactly once, verify its profile_path, then call sttm_agent_tool exactly once to generate Bronze STTM rules."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 0.5926,
+  "status": "failed",
+  "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+}

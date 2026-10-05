@@ -1,0 +1,16 @@
+{
+  "agent": "supervisor_phase1",
+  "run_id": "83023889-349d-4c5b-8a48-f855f17cf7b7",
+  "started_at": "2026-08-30T18:12:57.851807+00:00",
+  "input": {
+    "phase": "phase1",
+    "phase_goal": "Call profiler_agent_tool exactly once, verify its profile_path, then call sttm_agent_tool exactly once to generate Bronze STTM rules."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 0.0969,
+  "status": "failed",
+  "error": "The api_key client option must be set either by passing api_key to the client or by setting the GROQ_API_KEY environment variable"
+}

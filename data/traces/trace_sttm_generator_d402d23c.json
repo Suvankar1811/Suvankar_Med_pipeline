@@ -1,0 +1,16 @@
+{
+  "agent": "sttm_generator",
+  "run_id": "d402d23c-05cf-4fa1-aa74-208630d530ae",
+  "started_at": "2026-08-27T09:17:23.624041+00:00",
+  "input": {
+    "layer": "Silver",
+    "task_description": "Generate Silver cleansing and standardization mappings from the Bronze outputs. Goal: Generate Silver STTM rules from the completed Bronze outputs: sales_data_bronze.parquet, products_bronze.parquet, and stores_bronze.parquet located in the bronze_layer directory."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 56.8447,
+  "status": "failed",
+  "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01m05wq9b4egetgnpz17t6kess` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5565, Requested 3467. Please try again in 7.74s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+}

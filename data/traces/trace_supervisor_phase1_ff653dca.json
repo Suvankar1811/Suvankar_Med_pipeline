@@ -1,0 +1,16 @@
+{
+  "agent": "supervisor_phase1",
+  "run_id": "ff653dca-ba8b-4800-8823-4abbdfe39bf8",
+  "started_at": "2026-08-27T09:05:53.075748+00:00",
+  "input": {
+    "phase": "phase1",
+    "phase_goal": "Call profiler_agent_tool exactly once, verify its profile_path, then call sttm_agent_tool exactly once to generate Bronze STTM rules."
+  },
+  "plan": "",
+  "tool_calls": [],
+  "reasoning_steps": [],
+  "output": {},
+  "duration_seconds": 0.5311,
+  "status": "failed",
+  "error": "Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}"
+}

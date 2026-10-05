@@ -292,3 +292,5 @@ Yes. Set `LLM_PROVIDER` and the corresponding credentials in `.env`, then restar
 ### Is human approval required?
 
 Yes. The UI provides approval gates for Bronze, Silver, and Gold STTM rules so users can edit or deselect mappings before execution continues.
+#   S u v a n k a r _ M e d _ p i p e l i n e  
+ 
